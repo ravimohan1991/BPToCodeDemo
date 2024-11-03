@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{6B92F3AF-1E44-4795-8A1B-3CF9FD268758}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "BPToCodeDemo",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
