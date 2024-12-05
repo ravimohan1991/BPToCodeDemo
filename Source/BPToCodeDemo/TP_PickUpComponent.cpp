@@ -13,9 +13,9 @@ void UTP_PickUpComponent::BeginPlay()
 	Super::BeginPlay();
 
 	// Register our Overlap Event
-	OnComponentBeginOverlap.AddDynamic(this, &UTP_PickUpComponent::OnSphereBeginOverlap);
+	//OnComponentBeginOverlap.AddDynamic(this, &UTP_PickUpComponent::OnSphereBeginOverlap);
 }
-
+/*
 void UTP_PickUpComponent::OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	// Checking if it is a First Person Character overlapping
@@ -29,3 +29,4 @@ void UTP_PickUpComponent::OnSphereBeginOverlap(UPrimitiveComponent* OverlappedCo
 		OnComponentBeginOverlap.RemoveAll(this);
 	}
 }
+*/

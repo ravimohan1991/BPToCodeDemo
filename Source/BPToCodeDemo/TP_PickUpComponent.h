@@ -19,7 +19,7 @@ class BPTOCODEDEMO_API UTP_PickUpComponent : public USphereComponent
 public:
 	
 	/** Delegate to whom anyone can subscribe to receive this event */
-	UPROPERTY(BlueprintAssignable, Category = "Interaction")
+	UPROPERTY(BlueprintCallable, BlueprintAssignable, Category = "Interaction")
 	FOnPickUp OnPickUp;
 
 	UTP_PickUpComponent();
@@ -29,6 +29,6 @@ protected:
 	virtual void BeginPlay() override;
 
 	/** Code for when something overlaps this component */
-	UFUNCTION()
-	void OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	//UFUNCTION()
+	//void OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 };
